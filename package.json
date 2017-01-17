@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "postinstall": "gulp browserify",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.5"
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeejp/experiment-boilerplate.git"
+  },
+  "license": "MIT",
+  "description": ""
+}
