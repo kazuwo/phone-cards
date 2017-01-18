@@ -4,7 +4,6 @@
   "description": "this app is used when you want to magic",
   "main": "server.js",
   "dependencies": {
-    "ejs": "^2.5.5"
   },
   "devDependencies": {},
   "scripts": {
