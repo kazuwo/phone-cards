@@ -1,15 +1,25 @@
 {
-  "scripts": {
-    "postinstall": "gulp browserify",
-    "start": "node server.js"
-  },
+  "name": "phone-cards",
+  "version": "1.0.0",
+  "description": "this app is used when you want to magic",
+  "main": "server.js",
   "dependencies": {
     "ejs": "^2.5.5"
   },
-   "repository": {
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "gulp browserify",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/kazuwo/phone-cards.git"
   },
-  "license": "MIT",
-  "description": ""
+  "author": "kazuwo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazuwo/phone-cards/issues"
+  },
+  "homepage": "https://github.com/kazuwo/phone-cards#readme"
 }
