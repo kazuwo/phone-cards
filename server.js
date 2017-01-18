@@ -1,23 +1,10 @@
-var http = require('http')
-fs = require('fs');
-ejs = require('ejs');
-var settings = require('./settings')
-console.log(settings);
+var http = require('http');
 var server = http.createServer();
-var template = fs.readFileSync(__dirname + '/public_html/hello.ejs', 'utf-8');
-var n = 0;
-server.on('request', function(req, res) {
-  n++
-  var data = ejs. render(template, {
-    title: "hello",
-    content: "<strong>World!</strong>",
-    n: n
-  });
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    res.end();
-
-  })
-  server.listen(settings.port, settings.host);
-  console.log("server listening ...");
+server.on('request', function(req, res){
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.write('hello world !!!');
+  res.end();
+});
+server..listen(process.env.PORT || 5000)
+console.log("server listening ...");
 
