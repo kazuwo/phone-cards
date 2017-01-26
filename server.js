@@ -14,8 +14,8 @@ server.on('request', function(req, res){
   });
 
 });
-//server.listen(1337, '192.168.11.5');
-server.listen(process.env.PORT || 5000)
+server.listen(1337, '192.168.11.5');
+//server.listen(process.env.PORT || 5000)
 console.log("server listening ...");
 
 
